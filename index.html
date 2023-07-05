@@ -1,32 +1,33 @@
-<html >
+<html>
 
 <head>
 	<title>Survey Form</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="bootstrap\css\bootstrap.css">
 
-	
+
 </head>
 
 <body class="xyz">
 	<div class="row ">
 		<div class="mx-auto  col-12 col-md-8 col-lg-6">
 
-			<form class="formdiv" >
+			<form class="formdiv" method="post" action="process.php">
 				<h1 class="hd">Contact us</h1>
-				
+
 				<div class="row">
 					<div class="form-group col-md-6">
 						<label for="name">Name:</label>
-						<input type="text" class="form-control"  placeholder="john doe" id="name" name="name" value="">
+						<input type="text" class="form-control" placeholder="john doe" id="name" name="name" value="">
 					</div>
 					<div class="form-group col-md-6">
 						<label for="email">Email:</label>
-						<input type="email" class="form-control" id="email"  placeholder="abc@xyz.com" name="email" value="">
+						<input type="email" class="form-control" id="email" placeholder="abc@xyz.com" name="email"
+							value="">
 					</div>
 				</div>
 
-			
+
 				<div class="row">
 					<div class="form-group col-md-6">
 						<label for="company">Company:</label>
@@ -34,21 +35,22 @@
 					</div>
 					<div class="form-group col-md-6">
 						<label for="phone">Phone:</label>
-						<input type="number" class="form-control" id="phone" placeholder="0000-0000000"  name="phone" value="">
+						<input type="number" class="form-control" id="phone" placeholder="0000-0000000" name="phone"
+							value="">
 					</div>
 				</div>
 				<div class="form-group col-md-12">
 					<label for="subject">Subject:</label>
-					<input type="text" class="form-control" id="subject" placeholder="" name="message" value="">
+					<input type="text" class="form-control" id="subject" placeholder="" name="subject" value="">
 				</div>
 
-			<div class="form-group col-md-12">
-				<label >Message:</label>
-				<textarea class="form-control" rows="7" placeholder="your message" id="message" name="message" value=""></textarea>
-			</div>
+				<div class="form-group col-md-12">
+					<label>Message:</label>
+					<textarea class="form-control" rows="7" placeholder="your message" id="message" name="message"
+						value=""></textarea>
+				</div>
 
-				<button type="submit" class="btn btn-success">Submit</button>
-
+				<button type="submit" class="btn btn-success" value="submit">Submit</button>
 			</form>
 
 		</div>
@@ -59,4 +61,5 @@
 
 </body>
 <script src="bootstrap\js\bootstrap.js"></script>
+
 </html>
